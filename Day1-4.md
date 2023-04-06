@@ -1,8 +1,8 @@
 ### Where to start?
-- Theory: so many articles/papers discussing the success of ChatGPT, it seems the most key points:
-- A enough big pre-trained language model, which is now LLAMA
-- High-quality label data for SFT process, which is Alpaca from stanford and China's side efforts from 
-- The RLHF (PPO),  is not quite needed from the startpoint, but definatelly usueful, when the data flywheel is full-speed running
+ - Theory: so many articles/papers discussing the success of ChatGPT, it seems the most key points:
+ - A enough big pre-trained language model, which is now LLAMA
+ - High-quality label data for SFT process, which is Alpaca from stanford and China's side efforts from 
+ - The RLHF (PPO),  is not quite needed from the startpoint, but definatelly usueful, when the data flywheel is full-speed running
 
 
 ### The Plan of 4 days.
