@@ -1,16 +1,16 @@
-### Where to start?
+## Where to start?
  - Theory: so many articles/papers discussing the success of ChatGPT, it seems the most key points:
  - A enough big pre-trained language model, which is now LLAMA
  - High-quality label data for SFT process, which is Alpaca from stanford and China's side efforts from 
  - The RLHF (PPO),  is not quite needed from the startpoint, but definatelly usueful, when the data flywheel is full-speed running
 
 
-### The Plan of 4 days.
+## 4-days Plan
 
 - Day1: Get LLama, from open-web, since I didn't get the model from application process.
 
 
-### Details
+## Details
 
  - **Get LLaMA**
      - I am using windows, prepare the docker for ubuntu latest
@@ -25,13 +25,13 @@
   - **Run LLaMA**
     - Alpaca is good starting point, reading the introduction from 
 
-### Concepts
+## Concepts
 - BPE(Byte Pair Encoding) [hugging face](https://huggingface.co/course/chapter6/5?fw=pt)
 - RMSNorm(Root Mean Square Layer Normalization) [Github](https://github.com/bzhangGo/rmsnorm); Layer Normalization VS Batch Norm
 - SwiGLU
 - Rotary Embeddings
 
-### References
+## References
 1. [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
 2. [Gpt4all](https://github.com/search?q=Gpt4all)
 3. [Chinese LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) from iFLYTEK
