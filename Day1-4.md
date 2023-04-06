@@ -25,7 +25,7 @@
   - **Run LLaMA**
     - Alpaca is good starting point, reading the introduction from 
 
-### Concepts Warm Up
+### Concepts
 - BPE(Byte Pair Encoding) [hugging face](https://huggingface.co/course/chapter6/5?fw=pt)
 - RMSNorm(Root Mean Square Layer Normalization) [Github](https://github.com/bzhangGo/rmsnorm); Layer Normalization VS Batch Norm
 - SwiGLU
