@@ -8,22 +8,30 @@
 ## 4-days Plan
 
 - Day1: Get LLama, from open-web, since I didn't get the model from application process.
+- Day2: Run LLama
 
 
 ## Details
 
  - **Get LLaMA**
-     - I am using windows, prepare the docker for ubuntu latest
-     - 🚀has successfully download LLaMA model wights from ref5
-  - **Understand LLaMA**
-     - Understand the LLaMA model from ref6
-     - 🚀Revisit some basic transforer techs [Harvard NLP](https://nlp.seas.harvard.edu/2018/04/03/attention.html), learnings:
-         - one learning is pe is not learned and updated during training, but fixed, only has relations with token postiion and embedding'e element postion. 
-         - in multi-head attension, the extra parameters are only d_model * d_model * 4, nothing related with the heads number
+    - I am using windows, prepare the docker for ubuntu latest
+    - 🚀has successfully download LLaMA model wights from ref5
+- **Understand LLaMA**
+    - Understand the LLaMA model from ref6
+    - 🚀Revisit some basic transforer techs [Harvard NLP](https://nlp.seas.harvard.edu/2018/04/03/attention.html), learnings:
+        - one learning is pe is not learned and updated during training, but fixed, only has relations with token postiion and embedding'e element postion. 
+        - in multi-head attension, the extra parameters are only d_model * d_model * 4, nothing related with the heads number
     - 🚀Revisit LLM training techniques.
          - PaLM didn't mension anything else how the LM loss function, which means it's the traditional loss function.
-  - **Run LLaMA**
-    - Alpaca is good starting point, reading the introduction from 
+- **Run LLaMA**
+    - run llama using llama.cpp
+    - research on llama.cpp converting script
+    - research on the parameters compare GPT2 VS Bert VS LLaMa the differences are:
+        - :cherries: Feed forward: fc LLama implementation is `self.w2(F.silu(self.w1(x)) * self.w3(x))`
+        - :cherries: Layer norm: using RMSNorm, that's why only has 4096 params in LN.
+
+- **Demo LLaMA**
+    - how to productlize LLaMA
 
 ## Concepts
 - BPE(Byte Pair Encoding) [hugging face](https://huggingface.co/course/chapter6/5?fw=pt)
