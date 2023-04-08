@@ -24,12 +24,16 @@
     - 🚀Revisit LLM training techniques.
          - PaLM didn't mension anything else how the LM loss function, which means it's the traditional loss function.
 - **Run LLaMA**
-    - run llama using llama.cpp
-    - research on llama.cpp converting script
+    - :rocket: run llama using llama.cpp succcessfully through github doc
+    - :cherries: research on llama.cpp converting script
     - research on the parameters compare GPT2 VS Bert VS LLaMa the differences are:
         - :cherries: Feed forward: fc LLama implementation is `self.w2(F.silu(self.w1(x)) * self.w3(x))`
         - :cherries: Layer norm: using RMSNorm, that's why only has 4096 params in LN.
-
+    
+- **Finetune LLaMA**
+    - :cherries: Read the Alpaca paper and document. [`train.py`](https://github.com/tatsu-lab/stanford_alpaca/blob/aa65c492bb788e144712daab42bc5d11c2761591/train.py#L32)
+    - :cherries: Read [LoRa](https://arxiv.org/pdf/2106.09685.pdf)
+    - :cherries: Read [Prefix-Tuning](https://arxiv.org/pdf/2106.09685.pdf)
 - **Demo LLaMA**
     - how to productlize LLaMA
 
