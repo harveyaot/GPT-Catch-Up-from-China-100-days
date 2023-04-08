@@ -4,12 +4,12 @@
  - High-quality label data for SFT process, which is Alpaca from stanford and China's side efforts from 
  - The RLHF (PPO),  is not quite needed from the startpoint, but definatelly usueful, when the data flywheel is full-speed running
 
-
 ## 4-days Plan
 
 - Day1: Get LLama, from open-web, since I didn't get the model from application process.
-- Day2: Run LLama
-
+- Day2: Run LLama, understand the SOTA finetune methods an Chinese related works.
+- Day3: *Finetune LLama*
+- Day4: *Demo LLama*
 
 ## Details
 
@@ -29,12 +29,23 @@
     - research on the parameters compare GPT2 VS Bert VS LLaMa the differences are:
         - :cherries: Feed forward: fc LLama implementation is `self.w2(F.silu(self.w1(x)) * self.w3(x))`
         - :cherries: Layer norm: using RMSNorm, that's why only has 4096 params in LN.
-    
 - **Finetune LLaMA**
     - :cherries: Read the Alpaca paper and document. [`train.py`](https://github.com/tatsu-lab/stanford_alpaca/blob/aa65c492bb788e144712daab42bc5d11c2761591/train.py#L32)
     - :cherries: Read [LoRa](https://arxiv.org/pdf/2106.09685.pdf)
     - :cherries: Read [Prefix-Tuning](https://arxiv.org/pdf/2106.09685.pdf)
+    - :cherries: Rampup the [huggingface](https://huggingface.co/docs/transformers/) solution 
 - **Demo LLaMA**
+    - :raised_hand: what demo to present? a dump Chinese bot? how to make this super good? the Chinese Cultule especially for the PoemGPT
+    - :raised_hand: A demo should resove a pratical issue.
+        - :point_up: Domain for news, A NewsGPT answer my any questions about the news just happened.， Should be a News Search + Summarization scenario.
+        - :point_up: should honor search's precision + Summarization ability.
+        - :point_up: Legal Consultant GPT
+    - :point_right: Should firstly start from a very simple idea and easy to implement, then the idea is news brief 
+        - :point_up: Proving a keyword and search returns 20 docs, 
+        - :point_up: Clustering into 3-6 clusters, summarize each cluter into key points using GPT-3.5
+        - :point_up: Sorting the cluster by popularity and recency. 
+    
+
     - how to productlize LLaMA
 
 ## Concepts
