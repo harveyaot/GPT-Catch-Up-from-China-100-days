@@ -40,13 +40,11 @@
         - :point_up: Domain for news, A NewsGPT answer my any questions about the news just happened.， Should be a News Search + Summarization scenario.
         - :point_up: should honor search's precision + Summarization ability.
         - :point_up: Legal Consultant GPT
-    - :point_right: Should firstly start from a very simple idea and easy to implement, then the idea is news brief 
+    - :raised_hand: Should firstly start from a very simple idea and easy to implement, then the idea is news brief 
         - :point_up: Proving a keyword and search returns 20 docs, 
         - :point_up: Clustering into 3-6 clusters, summarize each cluter into key points using GPT-3.5
         - :point_up: Sorting the cluster by popularity and recency. 
-    
-
-    - how to productlize LLaMA
+    - :point_right: how to productlize LLaMA
 
 ## Concepts
 - BPE(Byte Pair Encoding) [hugging face](https://huggingface.co/course/chapter6/5?fw=pt)
