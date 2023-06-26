@@ -21,16 +21,16 @@ def demo_origin_tokenizer():
 def demo_generate_content():
     generator = pipeline('text-generation', model='gpt2-medium',device=0)
     set_seed(42)
-    res = generator("对于生活更加追求", max_length=30, num_return_sequences=5)
+    res = generator("对于生活更加追求", max_length=100, num_return_sequences=5)
     print(res)
 
-def demo_generate_content_with_cn80m():
-    model_cn80m = GPT2LMHeadModel.from_pretrained('test_trainer_0/checkpoint-10000')
+def demo_generate_content_with_cn80m(modeldir):
+    model_cn80m = GPT2LMHeadModel.from_pretrained(modeldir)
     tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium')
     tokenizer.pad_token = tokenizer.eos_token
     generator = pipeline('text-generation', model=model_cn80m ,device=0, tokenizer=tokenizer)
     set_seed(42)
-    res = generator("对于生活更加追求", max_length=30, num_return_sequences=5)
+    res = generator("对于生活更加追求", max_length=100, num_return_sequences=5)
     print(res)
     
 def finetune_with_cn80m():
@@ -38,5 +38,5 @@ def finetune_with_cn80m():
 
 if __name__ == "__main__":
     demo_generate_content()
-    demo_generate_content_with_cn80m()
+    demo_generate_content_with_cn80m('test_trainer_1\checkpoint-20000')
     #demo_generate_content()
