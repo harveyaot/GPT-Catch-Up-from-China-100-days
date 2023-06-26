@@ -10,9 +10,9 @@
 
 - What a product looks like?
     - collect ideas
-        - :cherry: a chinese peom boat
-        - :cherry: a lay related bot, if doing this violating laws or not?
-        - :cherry: just a bot to write the next paragragh of an given article
+        - :cherries: a chinese peom boat
+        - :cherries: a lay related bot, if doing this violating laws or not?
+        - :cherries: just a bot to write the next paragragh of an given article
     - use which foudnation model
     - starting from a very small sceanrio. 
     - what data I have?
@@ -20,23 +20,26 @@
     - Then scrape GPT-4 for the labeling data then translate it into another style
 
 ## Details
-- :cherry: What a product goal to achive?
+- What a product goal to achive?
     - A chinese peom boat or writhing things more clearly?
 - Pretrain a lanugage model on single card and multiple GPU cards
-    - :cherry: using GPT-2 as the start point
-    - :cherry: using what data to train
+    - :cherries: using GPT-2 as the start point
+    - :cherries: using what data to train
 ## Progress
 ### Task
 
 - A technique roadmap
     - finetune on single card.
-        - :cherry: ues GPT2-Large
-        - :cherry: find some open datasets, using beyond/chinese_clean_passages_80m
+        - :cherries: ues GPT2-Large
+        - :cherries: find some open datasets, using beyond/chinese_clean_passages_80m
         - :rocket: Locally has run successfully
-        - Question1, how doese the attension_mask used? [Doc1](https://lukesalamone.github.io/posts/what-are-attention-masks/) [Doc2]()
-        - Question2, how the gpu parameters calculation 
+        - ❓how doese the attension_mask used? [Doc1](https://lukesalamone.github.io/posts/what-are-attention-masks/) [Doc2]()
+        - ❓how the gpu parameters calculation (why in reality, using gpt-meidum, which occupies 4G GPU? what the gradient accumulation works for?)
+              - []
+              - [Efficient Training on a Single GPU](https://huggingface.co/docs/transformers/v4.20.1/en/perf_train_gpu_one)
+   
     - How to extend tokenization
-        - :cherry: a guidline [Training a new tokenizer from an old one](https://huggingface.co/learn/nlp-course/chapter6/2)
+        - :cherries: a guidline [Training a new tokenizer from an old one](https://huggingface.co/learn/nlp-course/chapter6/2)
     - findtune on multi cards (hf, huoshan)
     - Train and extend Tokenizer
     - pretrain from scratch (hf, huoshan)
