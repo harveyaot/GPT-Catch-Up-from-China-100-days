@@ -35,12 +35,14 @@
         - :rocket: Locally has run successfully
         - ❓how doese the attension_mask used? [Doc1](https://lukesalamone.github.io/posts/what-are-attention-masks/) [Doc2]()
         - ❓how the gpu parameters calculation (why in reality, using gpt-meidum, which occupies 4G GPU? what the gradient accumulation works for?)
-              - []
               - [Efficient Training on a Single GPU](https://huggingface.co/docs/transformers/v4.20.1/en/perf_train_gpu_one)
    
     - How to extend tokenization
         - :cherries: a guidline [Training a new tokenizer from an old one](https://huggingface.co/learn/nlp-course/chapter6/2)
     - findtune on multi cards (hf, huoshan)
+        - AML is hard to get v100 and A100
+        - then try colab?
+        - 
     - Train and extend Tokenizer
     - pretrain from scratch (hf, huoshan)
     - collect a datasets on chinese task
@@ -60,9 +62,6 @@
     - prepare a datasets.
     - fintune the LLM, who is good enought, but can fit into 1 12GB card.
     - Cook a dataset, or just find a dataset, start pretraining.
-
-
-
 
 ## Knowledge
 
