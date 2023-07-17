@@ -1,3 +1,4 @@
+import os
 import torch
 import fastapi 
 import transformers
@@ -13,29 +14,25 @@ from threading import Thread
 app = fastapi.FastAPI()
 cache_dir = '/data'
 
-# loading the model
-model_path = 'openlm-research/open_llama_3b'
-tokenizer = LlamaTokenizer.from_pretrained(model_path, cache_dir=cache_dir)
-model = LlamaForCausalLM.from_pretrained(
-    model_path,
-    cache_dir=cache_dir,
-    load_in_8bit=True
-)
-
-'''
-model_path = 'gpt2'
-# loading the model
-
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForCausalLM.from_pretrained(
-    model_path,
-    cache_dir=cache_dir,
-    load_in_4bit=True
-)
-'''
+# reading from the os environment
+model_path = os.environ.get('MODEL_PATH', 'openlm-research/open_llama_3b')
+if 'llama' in model_path:
+    tokenizer = LlamaTokenizer.from_pretrained(model_path, cache_dir=cache_dir)
+    model = LlamaForCausalLM.from_pretrained(
+        model_path,
+        cache_dir=cache_dir,
+        load_in_4bit=True
+    )
+else:
+    tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        trust_remote_code=True,
+        cache_dir=cache_dir,
+        load_in_4bit=True
+    )
 
 device = 'cuda'
-
 # enabling cors
 app.add_middleware(
     CORSMiddleware,
