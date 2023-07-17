@@ -4,7 +4,7 @@ import requests
 import gradio as gr
 
 title = "RecoGPT"
-llm_url = "http://localhost:8080/generate_stream"
+llm_url = "http://localhost:8000/generate_stream"
 
 examples = [
     ["Q: Who are you? A:"],
