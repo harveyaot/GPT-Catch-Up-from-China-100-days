@@ -5,4 +5,4 @@ An individual developer located in China, what' the roadmap looks like to catch 
   - [Day 6-9](./Day6-9.md) Targeting rampup with huggingface, gpt and run locally 
   - [Day 10-11](./Day10-11.md) Targeting Lora, and 6B model training with V100/A100 remotely
   - [Day12](./Day12.md) Targeting inference and demo solutions.
-
+  - [Day13](./Day13.md) Targeting multi-targets and multi-nodes solution.
