@@ -1,3 +1,4 @@
 .vnenv
+.venv2/
 checkpoint-*/
 wandb/
