@@ -8,3 +8,6 @@
     - research the accelerate? 
     - research about deepspeed.
     - research about how to distributed finetune?
+
+
+    
