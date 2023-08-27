@@ -6,7 +6,7 @@ An individual developer located in China, what' the roadmap looks like to catch 
   - [Day 10-11](./Day10-11.md) Targeting Lora, and 6B model training with V100/A100 remotely
   - [Day 12](./Day12.md) Targeting inference and demo solutions.
   - [Day 13](./Day13.md) Targeting multi-targets and multi-nodes solution.
-  - [Day 14](To Add) Target to research on the RHLF process.
+  - [Day 14](./Day14.md) Target to research on the RHLF process.
   - [Day 15](To Add) Target to research on the LLama-2
   - [Day 16](To Add) Target to research on the streaming inference
   
