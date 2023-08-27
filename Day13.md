@@ -8,6 +8,7 @@
     - research the accelerate? 
     - research about deepspeed.
     - research about how to distributed finetune?
+2. the context lenght
 
 
     
