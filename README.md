@@ -9,4 +9,5 @@ An individual developer located in China, what' the roadmap looks like to catch 
   - [Day 14](./Day14.md) Target to research on the RHLF process.
   - [Day 15](./Day15.md) Target to research on the LLama-2
   - [Day 16](To Add) Target to research on the streaming inference
+  - [Day 17](To Add) Efficient Transformer
   
